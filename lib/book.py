@@ -1,4 +1,5 @@
 # Class for Book
+
 class Book:
     # Constructor for Book class
     def __init__(self, title, page_count):
@@ -18,11 +19,7 @@ class Book:
         else:
             # Stores the value if it is an integer
             self._page_count = value
-            
+
     # Method to turn the page
     def turn_page(self):
         print("Flipping the page...wow, you read fast!")
-
-
-
-    
