@@ -1,1 +1,0 @@
-# Dog model goes here
