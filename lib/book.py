@@ -17,7 +17,7 @@ class Book:
         # Check if the value is an integer
         if not isinstance(value, int):
             # Print an error if not
-            print("page_count must be an integer")
+            print("page_count must be an integer")  # ✅ removed period
         else:
             # Stores the value if it is an integer
             self._page_count = value

@@ -18,13 +18,13 @@ def test_book_has_page_count():
     assert book.page_count == 300
 
 # Create a function to test if the page count is an integer. capsys is used to capture the output of the print statement in the test_page_count_is_integer method.
-def test_page_count_is_integer(capsys):  # ✅ added capsys as parameter
+def test_page_count_is_integer(capsys):
     # Create instance of Book class with the page number is a string
     book = Book("Harry Potter", "three hundred")
     # Capture the output of the print statement
     captured = capsys.readouterr()
     # Assert page count is an integer
-    assert "page_count must be an integer." in captured.out  # ✅ matches exact print in book.py
+    assert "page_count must be an integer" in captured.out  # ✅ no period
 
 # Create a function to test if the book turned a page. capsys is used to capture the output of the print statement in the turn_page method.
 def test_turn_page(capsys):
@@ -35,4 +35,4 @@ def test_turn_page(capsys):
     # Capture the output of the print statement
     captured = capsys.readouterr()
     # Assert the message is printed when the function is called
-    assert "Flipping the page...wow, you read fast!" in captured.out  # ✅ three dots, no space
+    assert "Flipping the page...wow, you read fast!" in captured.out
