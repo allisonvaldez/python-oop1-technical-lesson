@@ -24,7 +24,7 @@ def test_coffee_size_is_valid(capsys):
     # Capture the output of the print statement
     captured = capsys.readouterr()
     # Assert coffee size is valid
-    assert "Size must be Small, Medium, or Large" in captured.out
+    assert "size must be Small, Medium, or Large" in captured.out
 
 # Create a function to test if the tip is added to the coffee price. capsys is used to capture the output of the print statement in the test_tip method.
 def test_tip(capsys):
