@@ -6,16 +6,18 @@ class Book:
         self.title = title
         self.page_count = page_count
     
-    # Getter and setter for page_count
+    # Getter for page_count
+    @property
     def page_count(self):
-        return self.page_count
+        return self._page_count
     
     # Setter for page_count with error handling
+    @page_count.setter
     def page_count(self, value):
-        # Check is the value is an integer
+        # Check if the value is an integer
         if not isinstance(value, int):
             # Print an error if not
-            print("Error: page_count must be an integer.")
+            print("page_count must be an integer.")
         else:
             # Stores the value if it is an integer
             self._page_count = value
