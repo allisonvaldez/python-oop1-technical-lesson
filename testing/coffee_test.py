@@ -1,0 +1,1 @@
+# Set up the testing file for coffee class
