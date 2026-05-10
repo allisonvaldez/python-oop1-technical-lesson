@@ -17,7 +17,7 @@ class Coffee:
         # Check if value is one of the valid sizes
         if value not in ["Small", "Medium", "Large"]:
             # Print an error if not
-            print("size must be Small, Medium, or Large") 
+            print("Size must be Small, Medium, or Large") 
         else:
             # Stores the value if it is valid
             self._size = value
