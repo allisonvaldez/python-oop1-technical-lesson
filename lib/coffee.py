@@ -17,7 +17,7 @@ class Coffee:
         # Check if value is one of the valid sizes
         if value not in ["Small", "Medium", "Large"]:
             # Print an error if not
-            print("size must be Small, Medium, or Large.") 
+            print("size must be Small, Medium, or Large") 
         else:
             # Stores the value if it is valid
             self._size = value
@@ -26,5 +26,5 @@ class Coffee:
     def tip(self):
         # Print the message
         print("This coffee is great, here's a tip!")
-        # Increase the price by $1.00
-        self.price += 1
+        # Increase price
+        self.price += 1.00
